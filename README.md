@@ -11,10 +11,15 @@
 
 To run the app from Visual Studio Online:
 
-1. From the terminal, run the following:
+1. Install dependencies.
 
    ```sh
    pip3 install -r requirements.txt --user
+   ```
+
+1. Start the app server.
+
+   ```sh
    flask run
    ```
 
@@ -23,3 +28,27 @@ To run the app from Visual Studio Online:
 1. Under `Environment Details`, then `Forwarded Ports`, click `Port :5000`
 
 This should open a new browser tab that says "Hello World!"
+
+## Azure App Services
+
+1. Downgrade the Azure CLI (temporary workaround for [unreleased bug fix](https://github.com/Azure/azure-cli/issues/11221))
+
+   ```sh
+   sudo apt-get update
+   sudo apt-get install --assume-yes --allow-downgrades azure-cli=2.0.75-1~stretch
+   ```
+
+1. Log in to the Azure CLI
+
+   ```sh
+   az login
+   ```
+
+1. Deploy the application—you can use another location, like `"Australia Central"`
+
+   ```sh
+   az webapp up --sku F1 --name australia-test --location "Central US"
+   ```
+
+1. It should output a URL. Copy to a new browser tab, and you should see "Hello World!"
+1. Try going to the `https://` version of that same URL
