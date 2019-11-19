@@ -1,5 +1,9 @@
 # Continuous Delivery workshop
 
+Workshop demonstrating the power of platforms, via Microsoft Azure.
+
+## Setup
+
 1. Go to [Visual Studio Online](https://online.visualstudio.com/environments)
 1. Sign in, or create a Microsoft+Azure account if needed
 1. Create a Billing Plan
@@ -65,3 +69,11 @@ This should open a new browser tab that says "Hello World!"
 
 1. In your tab with the web page open, hit refresh
 1. Look at the log output in your terminal
+
+## Cleanup
+
+To ensure you don't get charged for anything:
+
+1. View [all resources](https://portal.azure.com/#blade/HubsExtension/BrowseAll)
+1. Select all
+1. `Delete`
