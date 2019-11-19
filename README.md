@@ -44,6 +44,8 @@ This should open a new browser tab that says "Hello World!"
    az login
    ```
 
+### Deploy
+
 1. Deploy the application—you can use another location, like `"Australia Central"`
 
    ```sh
@@ -52,3 +54,14 @@ This should open a new browser tab that says "Hello World!"
 
 1. It should output a URL. Copy to a new browser tab, and you should see "Hello World!"
 1. Try going to the `https://` version of that same URL
+
+### View logs
+
+1. Tail the logs
+
+   ```sh
+   az webapp log tail
+   ```
+
+1. In your tab with the web page open, hit refresh
+1. Look at the log output in your terminal

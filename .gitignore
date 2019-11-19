@@ -1,2 +1,3 @@
-__pycache__
-pythonenv*
+__pycache__/
+.azure/
+pythonenv*/
