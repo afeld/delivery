@@ -54,6 +54,18 @@ To run the app from Visual Studio Online:
 
 This should open a new browser tab that says "Hello World!"
 
+## Test-driven development (TDD)
+
+1. Run the tests
+
+   ```sh
+   pytest test_local.py
+   ```
+
+1. Add a test for a new route: `/bye` should return `Goodbye!`
+1. Run the local tests again
+1. Get the test to pass
+
 ## Azure App Services
 
 Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azure/app-service/containers/quickstart-python).
