@@ -70,13 +70,6 @@ This should open a new browser tab that says "Hello World!"
 
 Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azure/app-service/containers/quickstart-python).
 
-1. Downgrade the Azure CLI (temporary workaround for [unreleased bug fix](https://github.com/Azure/azure-cli/issues/11221))
-
-   ```sh
-   sudo apt-get update
-   sudo apt-get install --assume-yes --allow-downgrades azure-cli=2.0.75-1~stretch
-   ```
-
 1. Log in to the Azure CLI
 
    ```sh
