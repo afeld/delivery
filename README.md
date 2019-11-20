@@ -93,6 +93,31 @@ Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azure
 1. In your tab with the web page open, hit refresh
 1. Look at the log output in your terminal
 
+## Security tests
+
+1. Open [`test_security.py`](test_security.py)
+1. Modify the `HOST` to be your deployed app
+1. Run the tests
+
+   ```sh
+   pytest test_security.py
+   ```
+
+1. Test should fail
+1. Force HTTPS
+
+   ```sh
+   az webapp update --https-only true
+   ```
+
+1. Run the tests again
+
+   ```sh
+   pytest test_security.py
+   ```
+
+1. The tests should now pass
+
 ## Cleanup
 
 To ensure you don't get charged for anything:
