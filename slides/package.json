@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "dependencies": {
+    "remarker": "^1.11.2"
+  },
+  "scripts": {
+    "start": "remarker -b",
+    "build": "remarker build"
+  }
+}
