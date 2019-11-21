@@ -5,7 +5,7 @@ set -x
 
 # generate SSH key
 # https://unix.stackexchange.com/a/69318
-ssh-keygen -t rsa -b 2048 -f ~/.ssh/id_rsa -q -N "" -C workshop
+ssh-keygen -t rsa -b 2048 -f ~/.ssh/id_rsa -q -N "" -C vsonline
 # disable host key checking
 printf "Host *\n\tStrictHostKeyChecking no\n\tUserKnownHostsFile=/dev/null\n" > ~/.ssh/config
 

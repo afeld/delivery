@@ -94,7 +94,7 @@ This should open a new browser tab that says "Hello World!"
    - **Username:** `vsonline`
    - **SSH public key:**
      1. From terminal, run `cat ~/.ssh/id_rsa.pub`
-     1. Copy the output (`ssh-rsa` through `workshop`)
+     1. Copy the output (`ssh-rsa` through `vsonline`)
      1. Paste into input field
    - **Select inbound ports:** Select `HTTP` and `SSH`
    - Leave the rest as defaults
