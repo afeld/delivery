@@ -57,11 +57,21 @@ _\*If we're lucky_
 
 To run the app from Visual Studio Online:
 
+1. Go into the application directory
+
+   ```sh
+   cd app
+   ```
+
 1. Install dependencies.
 
    ```sh
    pip3 install -r requirements.txt --user
    ```
+
+---
+
+### Run the app
 
 1. Start the app server.
 
@@ -70,7 +80,7 @@ To run the app from Visual Studio Online:
    ```
 
 1. It should say `Running on http://127.0.0.1:5000/`
-1. Click the Remote Explorer in the Activity Bar
+1. In the Activity Bar (on the left), click the Remote Explorer
 1. Under `Environment Details`, then `Forwarded Ports`, click `Port :5000`
 
 This should open a new browser tab that says "Hello World!"
@@ -116,7 +126,7 @@ This should open a new browser tab that says "Hello World!"
    - Don't close the tab
 1. From the terminal, run `ssh <IP>`
 
-The prompt should change to `vsonline@workshop:~$`
+The prompt should change to `vsonline@workshop:~$`.
 
 ---
 
@@ -137,7 +147,7 @@ The prompt should change to `vsonline@workshop:~$`
 1. Go into the app directory
 
    ```sh
-   cd delivery
+   cd delivery/app
    ```
 
 ---
@@ -154,7 +164,11 @@ The prompt should change to `vsonline@workshop:~$`
 1. Copy the `Public IP address`
 1. Open a new browser tab
 1. Paste the IP into the URL bar
-1. Press Return
+1. Press return
+
+---
+
+### What _didn't_ we do?
 
 ---
 
@@ -165,6 +179,15 @@ The prompt should change to `vsonline@workshop:~$`
 - Ensure that operating system packages stay up-to-date
 - Disable root login
 - ...
+
+---
+
+### Exit
+
+1. Press CONTROL+c
+1. Type `exit` and press return
+
+Your prompt should change back to `vsonline:~/workspace`.
 
 ---
 
@@ -219,8 +242,6 @@ _Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azur
    pytest test_security.py
    ```
 
-1. Test should fail
-
 ---
 
 ### Making security tests pass
@@ -236,8 +257,6 @@ _Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azur
    ```sh
    pytest test_security.py
    ```
-
-1. The tests should now pass
 
 ---
 
