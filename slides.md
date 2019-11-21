@@ -84,6 +84,35 @@ This should open a new browser tab that says "Hello World!"
 
 ---
 
+## Infrastructure-as-a-service (IaaS)
+
+1. Go to [Create a Virtual Machine](https://portal.azure.com/#create/Microsoft.VirtualMachine)
+1. Fill in the Basics
+   - **Resource group:** Select the one that's there, or create a new one if needed
+   - **Virtual machine name:** `workshop`
+   - **Size:** Select the smallest (`B1ls`)
+   - **Username:** `vsonline`
+   - **SSH public key:**
+     1. From terminal, run `cat ~/.ssh/id_rsa.pub`
+     1. Copy the output (`ssh-rsa` through `workshop`)
+     1. Paste into input field
+   - **Select inbound ports:** Select `HTTP` and `SSH`
+   - Leave the rest as defaults
+1. Click `Review + create`
+1. Click `Create`
+
+---
+
+### SSH
+
+1. Click `Go to resource`
+1. Copy the `Public IP address`
+1. From the terminal, run `ssh <IP>`
+
+The prompt should change to `vsonline@workshop:~$`
+
+---
+
 ## Azure App Services
 
 Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azure/app-service/containers/quickstart-python). To start, log into the Azure CLI.
