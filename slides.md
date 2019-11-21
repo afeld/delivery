@@ -22,6 +22,7 @@ _\*If we're lucky_
 ## Level-setting
 
 - Who could describe the difference between IaaS and PaaS?
+- Who here has deployed something to the cloud themselves?
 - Who has used the command line in the past three months?
 
 ---
@@ -90,7 +91,6 @@ This should open a new browser tab that says "Hello World!"
 1. Fill in the Basics
    - **Resource group:** Select the one that's there, or create a new one if needed
    - **Virtual machine name:** `workshop`
-   - **Size:** Select the smallest (`B1ls`)
    - **Username:** `vsonline`
    - **SSH public key:**
      1. From terminal, run `cat ~/.ssh/id_rsa.pub`
@@ -107,9 +107,48 @@ This should open a new browser tab that says "Hello World!"
 
 1. Click `Go to resource`
 1. Copy the `Public IP address`
+   - Don't close the tab
 1. From the terminal, run `ssh <IP>`
 
 The prompt should change to `vsonline@workshop:~$`
+
+---
+
+### Deploy
+
+1. Install dependencies
+
+   ```sh
+   sudo apt-get update && sudo apt-get install -y python3-flask
+   ```
+
+1. Get the app code
+
+   ```sh
+   git clone --depth=1 https://github.com/afeld/delivery.git
+   ```
+
+1. Go into the app directory
+
+   ```sh
+   cd delivery
+   ```
+
+---
+
+### Deploy (continued)
+
+1. Start the app server
+
+   ```sh
+   sudo FLASK_APP=app.py flask run -h 0.0.0.0 -p 80
+   ```
+
+1. Go back to your Azure Portal tab
+1. Copy the `Public IP address`
+1. Open a new browser tab
+1. Paste the IP into the URL bar
+1. Press Return
 
 ---
 
