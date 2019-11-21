@@ -25,4 +25,6 @@
 
 ## Walkthrough
 
-The instructions are in [`slides.md`](slides.md). You will want to follow along the workshop there.
+The instructions/slide content is in [`slides.md`](slides.md). You will want to follow along the workshop there.
+
+To view as slides, install Node.js and run `npx remarker -b`.

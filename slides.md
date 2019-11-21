@@ -7,6 +7,8 @@
 1. Click the Environment to Connect
 1. [Open a terminal](https://code.visualstudio.com/docs/editor/integrated-terminal)
 
+---
+
 ## Visual Studio Online
 
 To run the app from Visual Studio Online:
@@ -29,6 +31,8 @@ To run the app from Visual Studio Online:
 
 This should open a new browser tab that says "Hello World!"
 
+---
+
 ## Test-driven development (TDD)
 
 1. Run the tests
@@ -41,26 +45,33 @@ This should open a new browser tab that says "Hello World!"
 1. Run the local tests again
 1. Get the test to pass
 
+---
+
 ## Azure App Services
 
-Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azure/app-service/containers/quickstart-python).
+Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azure/app-service/containers/quickstart-python). To start, log into the Azure CLI.
 
-1. Log in to the Azure CLI
+```sh
+az login
+```
 
-   ```sh
-   az login
-   ```
+---
 
 ### Deploy
 
 1. Deploy the application—you can use [another location](https://azure.microsoft.com/en-us/global-infrastructure/locations/), like `"Australia Central"`
 
    ```sh
-   az webapp up --sku F1 --name <yourname>-test --location "Central US"
+   az webapp up \
+     --sku F1 \
+     --name <yourname>-test \
+     --location "Central US"
    ```
 
 1. It should output a URL. Copy to a new browser tab, and you should see "Hello World!"
 1. Try going to the `https://` version of that same URL
+
+---
 
 ### View logs
 
@@ -73,6 +84,8 @@ Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azure
 1. In your tab with the web page open, hit refresh
 1. Look at the log output in your terminal
 
+---
+
 ## Security tests
 
 1. Open [`test_security.py`](test_security.py)
@@ -84,6 +97,11 @@ Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azure
    ```
 
 1. Test should fail
+
+---
+
+### Making security tests pass
+
 1. Force HTTPS
 
    ```sh
@@ -97,6 +115,8 @@ Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azure
    ```
 
 1. The tests should now pass
+
+---
 
 ## Cleanup
 
