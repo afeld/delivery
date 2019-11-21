@@ -1,3 +1,38 @@
+# Continuous Delivery in Government
+
+**_DevOps fundamentals for the public sector_**
+
+Aidan Feldman, Civic Technologist
+
+---
+
+## What are we doing today
+
+- Setting up a development environment in [Visual Studio Online](https://visualstudio.microsoft.com/services/visual-studio-online/)
+- Running an application "locally"
+- Automated application testing
+- Deploying to infrastructure-as-a-service (IaaS)
+- Deploying to a platform-as-a-service (PaaS)
+- Automated security testing
+
+---
+
+## Level-setting
+
+- Who could describe the difference between IaaS and PaaS?
+- Who has used the command line in the past three months?
+
+---
+
+## Caveats
+
+- We are using Azure, but this is not an endorsement
+  - Could use any number of cloud providers
+- You will need a credit/debit card
+  - Just for verification; shouldn't cost anything
+
+---
+
 ## Setup
 
 1. Go to [Visual Studio Online](https://online.visualstudio.com/environments)
