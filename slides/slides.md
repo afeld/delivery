@@ -6,6 +6,12 @@ Aidan Feldman, Civic Technologist
 
 ---
 
+class: center, middle
+
+## [delivery.afeld.me](https://delivery.afeld.me/)
+
+---
+
 ## What we're going to accomplish\*
 
 - Setting up a development environment in [Visual Studio Online](https://visualstudio.microsoft.com/services/visual-studio-online/)

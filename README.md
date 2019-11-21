@@ -22,7 +22,3 @@
 
 - A basic understanding of the command line
 - A credit card (for Azure signup—won't be charged)
-
-## Walkthrough
-
-The instructions/slide content is in [`slides/slides.md`](slides/slides.md). You will want to follow along the workshop there.
