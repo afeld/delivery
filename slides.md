@@ -6,7 +6,7 @@ Aidan Feldman, Civic Technologist
 
 ---
 
-## What are we doing today
+## What we're going to accomplish\*
 
 - Setting up a development environment in [Visual Studio Online](https://visualstudio.microsoft.com/services/visual-studio-online/)
 - Running an application "locally"
@@ -14,6 +14,8 @@ Aidan Feldman, Civic Technologist
 - Deploying to infrastructure-as-a-service (IaaS)
 - Deploying to a platform-as-a-service (PaaS)
 - Automated security testing
+
+_\*If we're lucky_
 
 ---
 
@@ -160,3 +162,26 @@ To ensure you don't get charged for anything:
 1. View [all resources](https://portal.azure.com/#blade/HubsExtension/BrowseAll)
 1. Select all
 1. `Delete`
+
+---
+
+## What we did
+
+- Set up a development environment
+- Ran an application "locally"
+- Automated application testing
+- Deployed to infrastructure-as-a-service (IaaS)
+- Deployed to a platform-as-a-service (PaaS)
+- Automated security testing
+
+---
+
+## Questions?
+
+[@aidanfeldman](https://twitter.com/aidanfeldman)
+
+---
+
+## Thanks!
+
+[@aidanfeldman](https://twitter.com/aidanfeldman)
