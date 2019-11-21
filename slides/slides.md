@@ -158,25 +158,37 @@ The prompt should change to `vsonline@workshop:~$`
 
 ---
 
+### What _didn't_ we do?
+
+- Configure HTTPS
+- Ensure high availability
+- Ensure that operating system packages stay up-to-date
+- Disable root login
+- ...
+
+---
+
 ## Azure App Services
 
-Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azure/app-service/containers/quickstart-python). To start, log into the Azure CLI.
-
-```sh
-az login
-```
+_Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azure/app-service/containers/quickstart-python)._
 
 ---
 
 ### Deploy
 
-1. Deploy the application—you can use [another location](https://azure.microsoft.com/en-us/global-infrastructure/locations/), like `"Australia Central"`
+1. Log into the Azure CLI
+
+   ```sh
+   az login
+   ```
+
+1. Deploy the application
 
    ```sh
    az webapp up \
      --sku F1 \
+     --location "Australia Central"
      --name <yourname>-test \
-     --location "Central US"
    ```
 
 1. It should output a URL. Copy to a new browser tab, and you should see "Hello World!"
