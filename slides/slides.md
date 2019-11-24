@@ -234,6 +234,25 @@ Your prompt should change back to `vsonline:~/workspace`.
 
 ---
 
+### Idempotency
+
+1. Run Terraform again:
+
+   ```sh
+   terraform apply
+   ```
+
+1. What happened?
+1. Run Ansible again
+
+   ```sh
+   ansible-playbook -i vms.azure_rm.yml init.yml
+   ```
+
+1. What happened?
+
+---
+
 ## Azure App Services
 
 _Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azure/app-service/containers/quickstart-python)._
