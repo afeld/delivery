@@ -1,0 +1,9 @@
+---
+- hosts: all
+  remote_user: azureuser
+  tasks:
+    - name: Install Python+Flask
+      become: true
+      apt:
+        name: python3-flask
+        update_cache: yes
