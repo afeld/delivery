@@ -2,7 +2,7 @@ provider "azurerm" {
   version = "~> 1.36"
 }
 
-# simplified version of
+# adapted from
 # https://docs.microsoft.com/en-us/azure/virtual-machines/linux/terraform-create-complete-vm
 
 resource "azurerm_resource_group" "myterraformgroup" {
@@ -68,11 +68,12 @@ locals {
 }
 
 resource "azurerm_virtual_machine" "myterraformvm" {
-  name                  = "myVM"
-  location              = azurerm_resource_group.myterraformgroup.location
-  resource_group_name   = azurerm_resource_group.myterraformgroup.name
-  network_interface_ids = [azurerm_network_interface.myterraformnic.id]
-  vm_size               = "Standard_DS1_v2"
+  name                          = "myVM"
+  location                      = azurerm_resource_group.myterraformgroup.location
+  resource_group_name           = azurerm_resource_group.myterraformgroup.name
+  network_interface_ids         = [azurerm_network_interface.myterraformnic.id]
+  vm_size                       = "Standard_DS1_v2"
+  delete_os_disk_on_termination = true
 
   storage_os_disk {
     name          = "myOsDisk"
@@ -99,4 +100,8 @@ resource "azurerm_virtual_machine" "myterraformvm" {
       key_data = file("~/.ssh/id_rsa.pub")
     }
   }
+}
+
+output "public_ip" {
+  value = azurerm_public_ip.myterraformpublicip.ip_address
 }
