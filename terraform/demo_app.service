@@ -1,0 +1,15 @@
+# https://blog.miguelgrinberg.com/post/running-a-flask-application-as-a-service-with-systemd
+
+[Unit]
+Description=Demo app
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory={{ repo_path }}/app
+Environment=FLASK_APP=app.py
+ExecStart=/usr/bin/flask run -h 0.0.0.0 -p 80
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
