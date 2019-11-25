@@ -1,3 +1,4 @@
+name: deploy
 on: push
 
 jobs:
@@ -19,8 +20,8 @@ jobs:
       #     npm run test --if-present
 
       - name: Deploy to Azure App Service
-        working-directory: app
         uses: azure/webapps-deploy@v1
         with:
           app-name: australia-test
           publish-profile: ${{ secrets.azureWebAppPublishProfile }}
+          package: app
