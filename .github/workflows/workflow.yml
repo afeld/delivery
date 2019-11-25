@@ -1,0 +1,26 @@
+on: push
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v1
+
+      # - name: Set up Python
+      #   uses: actions/setup-python@v1.1.1
+      #   with:
+      #     # Version range or exact version of a Python version to use, using semvers version range syntax.
+      #     python-version:
+      # - name: "npm install, build, and test"
+      #   run: |
+      #     npm install
+      #     npm run build --if-present
+      #     npm run test --if-present
+
+      - name: Deploy to Azure App Service
+        working-directory: app
+        uses: azure/webapps-deploy@v1
+        with:
+          app-name: australia-test
+          publish-profile: ${{ secrets.azureWebAppPublishProfile }}
