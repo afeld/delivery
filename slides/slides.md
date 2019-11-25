@@ -8,7 +8,19 @@ Aidan Feldman, Civic Technologist
 
 class: center, middle
 
-## [delivery.afeld.me](https://delivery.afeld.me/)
+## First, exercise
+
+---
+
+class: center, middle
+
+### What's your agency's Dev[Sec]Ops maturity?
+
+---
+
+class: center, middle
+
+### What's _your_ level of Dev[Sec]Ops experience?
 
 ---
 
@@ -25,20 +37,18 @@ _\*If we're lucky_
 
 ---
 
-## Level-setting
-
-- Who could describe the difference between IaaS and PaaS?
-- Who here has deployed something to the cloud themselves?
-- Who has used the command line in the past three months?
-
----
-
-## Caveats
+## Disclaimers
 
 - We are using Azure, but this is not an endorsement
   - Could use any number of cloud providers
 - You will need a credit/debit card
   - Just for verification; shouldn't cost anything
+
+---
+
+class: center, middle
+
+## [delivery.afeld.me](https://delivery.afeld.me/)
 
 ---
 
