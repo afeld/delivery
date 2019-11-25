@@ -83,7 +83,7 @@ To run the app from Visual Studio Online:
 1. In the Activity Bar (on the left), click the Remote Explorer
 1. Under `Environment Details`, then `Forwarded Ports`, click `Port :5000`
 
-This should open a new browser tab that says "Hello World!"
+This should open a new browser tab that says "Hello, World!"
 
 ---
 
@@ -278,7 +278,7 @@ _Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azur
      --name <yourname>-test \
    ```
 
-1. It should output a URL. Copy to a new browser tab, and you should see "Hello World!"
+1. It should output a URL. Copy to a new browser tab, and you should see "Hello, World!"
 1. Try going to the `https://` version of that same URL
 
 ---
