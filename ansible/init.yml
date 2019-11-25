@@ -29,7 +29,7 @@
     - name: Create the service definition
       become: true
       template:
-        src: demo_app.service
+        src: templates/demo_app.service
         dest: /etc/systemd/system/demo_app.service
       notify:
         - Restart app

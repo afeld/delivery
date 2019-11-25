@@ -18,6 +18,6 @@ sudo apt-get install --assume-yes --allow-downgrades azure-cli=2.0.75-1~stretch
 TF_VERSION=0.12.16
 TF_URL=https://releases.hashicorp.com/terraform/${TF_VERSION}/terraform_${TF_VERSION}_linux_amd64.zip
 curl ${TF_URL} > /tmp/terraform.zip
-sudo unzip /tmp/terraform.zip -d /usr/local/bin
+sudo unzip -o /tmp/terraform.zip -d /usr/local/bin
 
 pip3 install --user 'ansible[azure]'

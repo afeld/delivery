@@ -219,11 +219,17 @@ Your prompt should change back to `vsonline:~/workspace`.
 
 ### Configuration as code
 
-Configure the virtual machine via Ansible playbook:
+1. Go to the [`ansible/`](ansible) directory
 
-```sh
-ansible-playbook -i vms.azure_rm.yml init.yml
-```
+   ```sh
+   cd ../ansible
+   ```
+
+1. Configure the virtual machine via Ansible playbook
+
+   ```sh
+   ansible-playbook -i vms.azure_rm.yml init.yml
+   ```
 
 ---
 
@@ -232,6 +238,7 @@ ansible-playbook -i vms.azure_rm.yml init.yml
 1. Run Terraform again:
 
    ```sh
+   cd ../terraform
    terraform apply
    ```
 
@@ -239,6 +246,7 @@ ansible-playbook -i vms.azure_rm.yml init.yml
 1. Run Ansible again
 
    ```sh
+   cd ../ansible
    ansible-playbook -i vms.azure_rm.yml init.yml
    ```
 
@@ -263,6 +271,7 @@ _Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azur
 1. Deploy the application
 
    ```sh
+   cd ../app
    az webapp up \
      --sku F1 \
      --location "Australia Central"
