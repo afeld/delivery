@@ -4,6 +4,11 @@
 
 Aidan Feldman, Civic Technologist
 
+## Setup
+
+1. Go to Visual Studio Online: [online.visualstudio.com](https://online.visualstudio.com/environments)
+1. Sign in, or create a Microsoft+Azure account if needed
+
 ---
 
 class: center, middle
@@ -40,6 +45,8 @@ _\*If we're lucky_
 
 ## Disclaimers
 
+- _Please_ ask questions
+  - If you have one, someone else is probably thinking the same thing
 - We are using Azure, but this is not an endorsement
   - Could use any number of cloud providers
 - You will need a credit/debit card
@@ -98,6 +105,12 @@ This should open a new browser tab that says "Hello, World!"
 
 ---
 
+class: center, middle
+
+## Speed check
+
+---
+
 ## Automated testing
 
 Run the tests:
@@ -108,7 +121,7 @@ pytest test_local.py
 
 ---
 
-## Test-driven development (TDD) assignment
+### Test-driven development (TDD) assignment
 
 1. Add a test for a new route: `/bye` should return `Goodbye!`
 1. Run the tests again
@@ -240,6 +253,12 @@ class: center, middle
 
 ---
 
+class: center, middle
+
+## Break?
+
+---
+
 ## Infrastructure as code
 
 Setting up the Azure-level stuff.
@@ -321,6 +340,12 @@ class: center, middle
 - Auditability
 - Automate-ability
 - Unlike documentation, keeps itself up-to-date
+
+---
+
+class: center, middle
+
+## Break?
 
 ---
 
