@@ -2,10 +2,10 @@ name: Smoke tests
 on:
   push:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "0 0 * * *"
 
 jobs:
-  deploy:
+  security:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
