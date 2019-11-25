@@ -24,3 +24,5 @@ curl ${TF_URL} > /tmp/terraform.zip
 sudo unzip -o /tmp/terraform.zip -d /usr/local/bin
 
 pip2 install --user --upgrade 'ansible[azure]'
+
+az configure --defaults location="Australia Central"

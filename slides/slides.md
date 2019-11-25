@@ -274,8 +274,7 @@ _Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azur
    cd ../app
    az webapp up \
      --sku F1 \
-     --location "Australia Central"
-     --name <yourname>-test \
+     --name <yourname>-test
    ```
 
 1. It should output a URL. Copy to a new browser tab, and you should see "Hello, World!"
