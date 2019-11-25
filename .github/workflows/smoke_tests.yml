@@ -1,0 +1,25 @@
+name: Smoke tests
+on:
+  push:
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v1
+
+      - name: Set up Python
+        uses: actions/setup-python@v1.1.1
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+        working-directory: app
+
+      - name: Run security tests
+        run: pytest test_security.py
+        working-directory: app
