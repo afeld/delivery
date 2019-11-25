@@ -1,0 +1,19 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v1
+
+      - name: Deploy to Azure App Service
+        uses: azure/webapps-deploy@v1
+        with:
+          app-name: australia-test
+          publish-profile: ${{ secrets.azureWebAppPublishProfile }}
+          package: app
