@@ -3,6 +3,14 @@
   remote_user: azureuser
   vars:
     repo_path: /home/{{ ansible_user }}/delivery
+  handlers:
+    - name: Restart app
+      become: true
+      systemd:
+        name: demo_app
+        state: restarted
+        daemon_reload: true
+
   tasks:
     - name: Install Python+Flask
       become: true
@@ -15,16 +23,18 @@
         repo: "https://github.com/afeld/delivery.git"
         depth: 1
         dest: "{{ repo_path }}"
+      notify:
+        - Restart app
 
     - name: Create the service definition
       become: true
       template:
         src: demo_app.service
         dest: /etc/systemd/system/demo_app.service
+      notify:
+        - Restart app
 
     - name: Start app
       become: true
       systemd:
         name: demo_app
-        state: restarted
-        daemon_reload: true
