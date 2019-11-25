@@ -32,6 +32,7 @@ class: center, middle
 - Deploying to infrastructure-as-a-service (IaaS)
 - Deploying to a platform-as-a-service (PaaS)
 - Automated security testing
+- Continuous integration (CI)
 
 _\*If we're lucky_
 
@@ -110,13 +111,13 @@ pytest test_local.py
 ## Test-driven development (TDD) assignment
 
 1. Add a test for a new route: `/bye` should return `Goodbye!`
-1. Run the local tests again
+1. Run the tests again
 
    ```sh
    pytest test_local.py
    ```
 
-1) Get the test to pass
+1. Get the test to pass
 
 ---
 
@@ -124,7 +125,7 @@ pytest test_local.py
 
 1. Go to [Create a Virtual Machine](https://portal.azure.com/#create/Microsoft.VirtualMachine)
 1. Fill in the Basics
-   - **Resource group:** Select the one that's there, or create a new one if needed
+   - **Resource group:** `Create new`, then enter `vm - manual`
    - **Virtual machine name:** `workshop`
    - **Username:** `vsonline`
    - **SSH public key:**
@@ -187,12 +188,23 @@ The prompt should change to `vsonline@workshop:~$`.
 
 ---
 
+### What did we do?
+
+1. Created a virtual machine
+1. Provided an SSH key
+1. SSH'd in
+1. Installed dependencies
+1. Downloaded the app code
+1. Started the server
+
+---
+
 ### What _didn't_ we do?
 
 - Configure HTTPS
 - Ensure high availability
 - Ensure that operating system packages stay up-to-date
-- Disable root login
+- Harden the SSH configuration
 - ...
 
 ---
@@ -206,11 +218,24 @@ Your prompt should change back to `vsonline:~/workspace`.
 
 ---
 
-### Cleanup
+class: center, middle
 
-1. View [all resources](https://portal.azure.com/#blade/HubsExtension/BrowseAll)
-1. Select all
-1. `Delete`
+### How long would it take you to recreate?
+
+---
+
+class: center, middle
+
+### Why might that be a problem?
+
+---
+
+### Why might that be a problem?
+
+- Creating new environments (staging)
+- Migration
+- Accidental deletion
+- Security incidents
 
 ---
 
@@ -342,7 +367,7 @@ _Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azur
 
 ---
 
-### Continuous integration
+### Continuous integration (CI)
 
 1. [Sign up](https://github.com/join) / [sign in](https://github.com/login) to github.com
    - Free plan is fine
@@ -354,7 +379,7 @@ _Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azur
 
 ---
 
-### Continuous integration assignment
+### Continuous integration (CI) assignment
 
 Get [Bandit](https://pypi.org/project/bandit/) to run against your repository. Do so by editing `.github/workflows/smoke_tests.yml` through GitHub.
 
@@ -362,13 +387,15 @@ _A clue: see how [`run`](https://help.github.com/en/actions/automating-your-work
 
 ---
 
-## Cleanup
+## Cleanup\*
 
 To ensure you don't get charged for anything:
 
 1. View [all resources](https://portal.azure.com/#blade/HubsExtension/BrowseAll)
 1. Select all
 1. `Delete`
+
+_\*You can keep them if you like, but that's on you._
 
 ---
 
