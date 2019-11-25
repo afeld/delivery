@@ -20,6 +20,10 @@ jobs:
         run: pip3 install -r requirements.txt
         working-directory: app
 
+      - name: Run app tests
+        run: pytest test_local.py
+        working-directory: app
+
       - name: Run security tests
         run: pytest test_security.py
         working-directory: app
