@@ -170,10 +170,6 @@ The prompt should change to `vsonline@workshop:~$`.
 
 ### What _didn't_ we do?
 
----
-
-### What _didn't_ we do?
-
 - Configure HTTPS
 - Ensure high availability
 - Ensure that operating system packages stay up-to-date
@@ -188,6 +184,72 @@ The prompt should change to `vsonline@workshop:~$`.
 1. Type `exit` and press return
 
 Your prompt should change back to `vsonline:~/workspace`.
+
+---
+
+### Cleanup
+
+1. View [all resources](https://portal.azure.com/#blade/HubsExtension/BrowseAll)
+1. Select all
+1. `Delete`
+
+---
+
+## Infrastructure as code
+
+1. [Install Terraform](https://learn.hashicorp.com/terraform/getting-started/install.html)
+1. Go into the [`terraform/`](terraform) directory
+
+   ```sh
+   cd terraform
+   ```
+
+1. Initialize Terraform
+
+   ```sh
+   terraform init
+   ```
+
+1. Create the infrastructure
+
+   ```sh
+   terraform apply
+   ```
+
+---
+
+### Configuration as code
+
+1. Install [Ansible](https://docs.ansible.com/ansible/latest/index.html)
+
+   ```sh
+   pip3 install 'ansible[azure]'
+   ```
+
+1. Configure the virtual machine via Ansible playbook
+
+   ```sh
+   ansible-playbook -i vms.azure_rm.yml init.yml
+   ```
+
+---
+
+### Idempotency
+
+1. Run Terraform again:
+
+   ```sh
+   terraform apply
+   ```
+
+1. What happened?
+1. Run Ansible again
+
+   ```sh
+   ansible-playbook -i vms.azure_rm.yml init.yml
+   ```
+
+1. What happened?
 
 ---
 
