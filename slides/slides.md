@@ -197,7 +197,7 @@ Your prompt should change back to `vsonline:~/workspace`.
 
 ## Infrastructure as code
 
-1. Go into the [`terraform/`](terraform) directory
+1. Go into the [`terraform/`](https://github.com/afeld/delivery/tree/master/terraform) directory
 
    ```sh
    cd terraform
@@ -219,7 +219,7 @@ Your prompt should change back to `vsonline:~/workspace`.
 
 ### Configuration as code
 
-1. Go to the [`ansible/`](ansible) directory
+1. Go to the [`ansible/`](https://github.com/afeld/delivery/tree/master/ansible) directory
 
    ```sh
    cd ../ansible
@@ -298,7 +298,7 @@ _Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azur
 
 ## Security tests
 
-1. Open [`test_security.py`](test_security.py)
+1. Open [`test_security.py`](https://github.com/afeld/delivery/blob/master/app/test_security.py)
 1. Modify the `HOST` to be your deployed app
 1. Run the tests
 
