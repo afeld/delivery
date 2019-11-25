@@ -197,7 +197,6 @@ Your prompt should change back to `vsonline:~/workspace`.
 
 ## Infrastructure as code
 
-1. [Install Terraform](https://learn.hashicorp.com/terraform/getting-started/install.html)
 1. Go into the [`terraform/`](terraform) directory
 
    ```sh
@@ -220,17 +219,11 @@ Your prompt should change back to `vsonline:~/workspace`.
 
 ### Configuration as code
 
-1. Install [Ansible](https://docs.ansible.com/ansible/latest/index.html)
+Configure the virtual machine via Ansible playbook:
 
-   ```sh
-   pip3 install 'ansible[azure]'
-   ```
-
-1. Configure the virtual machine via Ansible playbook
-
-   ```sh
-   ansible-playbook -i vms.azure_rm.yml init.yml
-   ```
+```sh
+ansible-playbook -i vms.azure_rm.yml init.yml
+```
 
 ---
 
