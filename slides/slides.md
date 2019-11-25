@@ -323,6 +323,26 @@ _Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azur
 
 ---
 
+### Continuous integration
+
+1. [Sign up](https://github.com/join) / [sign in](https://github.com/login) to github.com
+   - Free plan is fine
+1. From [the workshop repository](https://github.com/afeld/delivery), click `Use this template`
+1. For `Repository name`, put in `delivery` (anything, really)
+1. Click `Create repository from template`
+1. On your newly created repository, click the `Actions` tab
+1. You should see the build running
+
+---
+
+### Continuous integration assignment
+
+Get [Bandit](https://pypi.org/project/bandit/) to run against your repository.
+
+_A clue: see how [`run`](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions#jobsjob_idstepsrun) is being used._
+
+---
+
 ## Cleanup
 
 To ensure you don't get charged for anything:
