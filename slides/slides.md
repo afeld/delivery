@@ -13,7 +13,13 @@ Aidan Feldman, Civic Technologist
 
 class: center, middle
 
-## First, exercise
+## Intros
+
+---
+
+class: center, middle
+
+## Exercise
 
 ---
 
