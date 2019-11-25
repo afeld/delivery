@@ -123,7 +123,7 @@ pytest test_local.py
 
 ## Infrastructure-as-a-service (IaaS)
 
-1. Go to [Create a Virtual Machine](https://portal.azure.com/#create/Microsoft.VirtualMachine)
+1. Go to [Create a Virtual Machine](https://portal.azure.com/#create/Microsoft.VirtualMachine) (VM)
 1. Fill in the Basics
    - **Resource group:** `Create new`, then enter `vm - manual`
    - **Virtual machine name:** `workshop`
@@ -205,6 +205,7 @@ The prompt should change to `vsonline@workshop:~$`.
 - Ensure high availability
 - Ensure that operating system packages stay up-to-date
 - Harden the SSH configuration
+- Set up logging
 - ...
 
 ---
@@ -241,6 +242,8 @@ class: center, middle
 
 ## Infrastructure as code
 
+Setting up the Azure-level stuff.
+
 1. Go into the [`terraform/`](https://github.com/afeld/delivery/tree/master/terraform) directory
 
    ```sh
@@ -258,6 +261,13 @@ class: center, middle
    ```sh
    terraform apply
    ```
+
+---
+
+### Configuration as code
+
+- Setting up the virtual machine-level stuff
+- We'll use Ansible, but Chef, Puppet, etc. are equivalent configuration management tools
 
 ---
 
@@ -287,6 +297,7 @@ class: center, middle
    ```
 
 1. What happened?
+1. Visit the `public_ip` in your browser
 1. Run Ansible again
 
    ```sh
@@ -295,6 +306,21 @@ class: center, middle
    ```
 
 1. What happened?
+
+---
+
+class: center, middle
+
+### Why is infrastructure/configuration as code a good idea?
+
+---
+
+### Why is infrastructure/configuration as code a good idea?
+
+- Consistency/repeatability
+- Auditability
+- Automate-ability
+- Unlike documentation, keeps itself up-to-date
 
 ---
 
@@ -336,6 +362,26 @@ _Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azur
 
 1. In your tab with the web page open, hit refresh
 1. Look at the log output in your terminal
+
+---
+
+### What did we do?
+
+1. Ran a single command
+1. _Fin._
+
+---
+
+### What _didn't_ we do?
+
+- Configure HTTPS
+- Ensure high availability
+- Ensure that operating system packages stay up-to-date
+- Harden the SSH configuration
+- Set up logging
+- ...
+
+...because _all are done for us_.
 
 ---
 
@@ -384,6 +430,21 @@ _Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azur
 Get [Bandit](https://pypi.org/project/bandit/) to run against your repository. Do so by editing `.github/workflows/smoke_tests.yml` through GitHub.
 
 _A clue: see how [`run`](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions#jobsjob_idstepsrun) is being used._
+
+---
+
+class: center, middle
+
+### Why is continuous integration a good idea?
+
+---
+
+### Why is continuous integration a good idea?
+
+- Consistency/repeatability
+- Auditability
+- Automate-ability
+- Unlike documentation, keeps itself up-to-date
 
 ---
 
