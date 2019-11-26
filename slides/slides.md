@@ -462,7 +462,7 @@ _Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azur
 
 ### Continuous integration (CI) assignment
 
-Get [Bandit](https://pypi.org/project/bandit/) to run against your repository. Do so by editing `.github/workflows/smoke_tests.yml` through GitHub.
+Get [Bandit](https://pypi.org/project/bandit/) to run against your repository. Do so by editing `.github/workflows/workflow.yml` through GitHub.
 
 _A clue: see how [`run`](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions#jobsjob_idstepsrun) is being used._
 
