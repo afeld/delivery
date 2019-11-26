@@ -517,10 +517,12 @@ _\*You can keep them if you like, but that's on you._
 
 ## Questions?
 
-[@aidanfeldman](https://twitter.com/aidanfeldman)
+- [@aidanfeldman](https://twitter.com/aidanfeldman)
+- [github.com/afeld/delivery](https://github.com/afeld/delivery)
 
 ---
 
 ## Thanks!
 
-[@aidanfeldman](https://twitter.com/aidanfeldman)
+- [@aidanfeldman](https://twitter.com/aidanfeldman)
+- [github.com/afeld/delivery](https://github.com/afeld/delivery)
