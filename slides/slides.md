@@ -144,7 +144,7 @@ pytest test_local.py
 
 1. Go to [Create a Virtual Machine](https://portal.azure.com/#create/Microsoft.VirtualMachine) (VM)
 1. Fill in the Basics
-   - **Resource group:** `Create new`, then enter `vm - manual`
+   - **Resource group:** `Create new`, then enter `vm-manual`
    - **Virtual machine name:** `workshop`
    - **Username:** `vsonline`
    - **SSH public key:**
@@ -269,6 +269,16 @@ class: center, middle
 
 Setting up the Azure-level stuff.
 
+1. Log into the Azure CLI
+
+   ```sh
+   az login
+   ```
+
+---
+
+### Infrastructure as code, continued
+
 1. Go into the [`terraform/`](https://github.com/afeld/delivery/tree/master/terraform) directory
 
    ```sh
@@ -362,12 +372,6 @@ _Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azur
 ---
 
 ### Deploy
-
-1. Log into the Azure CLI
-
-   ```sh
-   az login
-   ```
 
 1. Deploy the application
 
@@ -499,6 +503,15 @@ _\*You can keep them if you like, but that's on you._
 - Deployed to infrastructure-as-a-service (IaaS)
 - Deployed to a platform-as-a-service (PaaS)
 - Automated security testing
+
+---
+
+## General principles
+
+- Do less
+- Leverage platforms
+- Automate
+- Get skills in-house
 
 ---
 

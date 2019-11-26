@@ -7,7 +7,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "myterraformgroup" {
   name     = "myResourceGroup"
-  location = "eastus"
+  location = "Australia Central"
 }
 
 resource "azurerm_virtual_network" "myterraformnetwork" {
