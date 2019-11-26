@@ -4,6 +4,10 @@ code {
   padding: 1px 7px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .remark-slide-content {
   font-size: 1.5em;
 }

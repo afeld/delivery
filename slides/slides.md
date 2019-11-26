@@ -420,6 +420,12 @@ _Roughly following the [Python Quickstart](https://docs.microsoft.com/en-us/azur
 
 ---
 
+class: center, middle
+
+[![Microsoft cloud model comparison](https://blogs.partner.microsoft.com/mpn-canada/wp-content/uploads/sites/81/2017/06/Microsoft-Azure-Cloud-Models.png)](https://blogs.partner.microsoft.com/mpn-canada/transitioning-premise-virtual-machines-cost-effective-azure-cloud-models/)
+
+---
+
 ## Security tests
 
 1. Open [`test_security.py`](https://github.com/afeld/delivery/blob/master/app/test_security.py)
