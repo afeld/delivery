@@ -9,13 +9,9 @@ ssh-keygen -t rsa -b 2048 -f ~/.ssh/id_rsa -q -N "" -C vsonline
 # disable host key checking
 printf "Host *\n\tStrictHostKeyChecking no\n\tUserKnownHostsFile=/dev/null\n" > ~/.ssh/config
 
-# downgrade the Azure CLI - temporary workaround for unreleased bug fix
-# https://github.com/Azure/azure-cli/issues/11221
-# also install Python 2, as Ansible is using a version of azure-cli that is incompatible with Python 3.8
+# install Python 2, as Ansible is using a version of azure-cli that is incompatible with Python 3.8
 sudo apt-get update
-sudo apt-get install --assume-yes --allow-downgrades \
-  azure-cli=2.0.75-1~stretch \
-  python-pip
+sudo apt-get install --assume-yes python-pip
 
 # install Terraform
 TF_VERSION=0.12.16
