@@ -22,3 +22,7 @@
 
 - A basic understanding of the command line
 - A credit card (for Azure signup—won't be charged)
+
+## See also
+
+- [Hands-on DevOps course](https://github.com/nemonik/hands-on-DevOps)
